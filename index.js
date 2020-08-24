@@ -21,7 +21,7 @@ class Polygon {
 class Triangle extends Polygon {
     get isValid() {
         let args = [
-            this.sides[0] + this.sides[1] > this.sides[2], 
+            this.sides[0] + this.sides[1] > this.sides[2],
             this.sides[1] + this.sides[2] > this.sides[0],
             this.sides[0] + this.sides[2] > this.sides[1]
         ];
@@ -39,7 +39,7 @@ class Triangle extends Polygon {
 };
 
 class Square extends Polygon {
-    
+
     get isValid() {
         let args = [
             this.sides[0] === this.sides[1],
@@ -54,7 +54,7 @@ class Square extends Polygon {
                 return false;
             } else {
                 return true;
-            }; 
+            };
         };
     };
 
